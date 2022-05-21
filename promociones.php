@@ -22,7 +22,7 @@
     </div>
 
     <nav class="navegacion">
-        <a class="navegacion__enlace" href="/rapufaz/administrador/index.php">Admin</a>
+        <a class="navegacion__enlace" href="/rapufaz/administrador/login.php">Admin</a>
         <a class="navegacion__enlace" href="index.php">Inicio</a>
     </nav>
 

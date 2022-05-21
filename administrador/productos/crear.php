@@ -121,7 +121,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="vendedor">vendedor del producto: </label>
             <select name="vendedor">
             <?php while($vendedor = mysqli_fetch_assoc($resultado)): ?>
-                    <option <?php echo $vendedorId === $vendedor['id'] ? 'selected' : ''; ?> value="<?php echo $vendedor['id']; ?>"><?php echo $vendedor['nombre']; ?></option>
+                    <option <?php echo $vendedorId === $vendedor['id'] ? 'selected' : ''; ?> value="<?php echo $vendedor['id']; ?>"><?php echo $vendedor['nombre']; echo " "; echo $vendedor['apellido'];?></option>
                 <?php endwhile ?>
 
                

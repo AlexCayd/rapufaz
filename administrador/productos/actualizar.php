@@ -145,7 +145,7 @@
             <select name="vendedor">
                 <option value="">Seleccione un Vendedor</option>
                 <?php while($vendedor = mysqli_fetch_assoc($resultado)): ?>
-                    <option <?php echo $vendedorId === $vendedor['id'] ? 'selected' : ''; ?> value="<?php echo $vendedor['id']; ?>"><?php echo $vendedor['nombre']; ?></option>
+                    <option <?php echo $vendedorId === $vendedor['id'] ? 'selected' : ''; ?> value="<?php echo $vendedor['id']; ?>"><?php echo $vendedor['nombre']; echo " "; echo $vendedor['apellido'];?></option>
                 <?php endwhile ?>
 
                
